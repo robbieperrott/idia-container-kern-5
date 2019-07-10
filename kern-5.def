@@ -54,9 +54,12 @@ Include: software-properties-common
     pip install ipykernel
     pip install atpy psutil katdal msutils parseltongue peasoup pyfftw pymonetdb attrdict blitz cub gsm astro-tigger astro-tigger-lsm cubical virtualenv
     pip install --no-cache-dir tensorflow
+    pip install cubical virtualenv
 
     apt-get -y install python3-pip
     pip3 install presto
+
+    apt-get install -y cmake
 
     # Installation of PyBDSF
     apt-get install -y libboost-python-dev libboost-numpy-dev python-setuptools gfortran build-essential
@@ -78,3 +81,12 @@ Include: software-properties-common
     # Clean-up
     apt-get clean
     apt-get autoclean
+
+%runscript
+if [ $# -eq 0 ]; then
+	echo "The following Python modules are installed in this image:"
+        pip freeze
+        echo "Example usage: singularity.simg [command] [args] [options]"
+else
+        exec "$@"
+fi
