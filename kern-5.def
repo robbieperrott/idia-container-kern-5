@@ -11,6 +11,8 @@ Include: software-properties-common
 
 %post
     
+    yum install libtool debootstrap xz
+    
     # Create Installation Directories and export paths. This is needed as part of post.
     # %environment scriptlet does not define these paths during %post, only after.
     mkdir -p /software/ /installer
