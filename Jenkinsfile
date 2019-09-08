@@ -4,7 +4,7 @@ Pipeline(
   token: '6ee372aca5f338acc72c5eb85e3573f994aa1150',
   image: 'kern-5.simg',
   recipe: 'kern-5.def',
-  collection: 'test',
+  collection: 'demo',
   container: 'kern-5',
   // Use empty string for no tag.
   tag: '')
