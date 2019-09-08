@@ -1,4 +1,4 @@
-Bootstrap: debootstrap
+Bootstrap: docker
 MirrorURL: http://archive.ubuntu.com/ubuntu/
 OSVersion: bionic
 Include: software-properties-common
