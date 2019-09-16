@@ -9,4 +9,4 @@ Pipeline(
   // Use empty string for no tag.
   tag: '',
   vm_user: 'ubuntu',
-  VM_IP: '154.114.37.153')
+  vm_ip: '154.114.37.153')
