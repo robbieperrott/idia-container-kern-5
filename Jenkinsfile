@@ -8,4 +8,5 @@ Pipeline(
   container: 'kern-5',
   // Use empty string for no tag.
   tag: '',
-  targetVM: '154.114.37.247')
+  VM_user: 'ubuntu',
+  VM_IP: '154.114.37.153')
