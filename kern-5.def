@@ -27,7 +27,7 @@ Include: software-properties-common
     apt-get dist-upgrade -y
     apt-get install -y \
     # libblitz0-dev pyxis \
-    python-xmlrunner \
+    # python-xmlrunner \
     # tempo casacore-dev casacore-doc casacore-tools casarest factor \
     # casacore-data meqtrees-timba kittens purr \
     python-purr python-meqtrees-cattery python-owlcat python-pyxis \
